@@ -1,0 +1,13 @@
+boots
+coat
+jacket
+longtop
+onepiece
+padding
+pants
+sandals
+shorts
+shorttop
+skirts
+sleeveless
+sneakers
