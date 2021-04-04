@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="materials">
+        <item>면</item>
+        <item>데님</item>
+        <item>울</item>
+        <item>린넨</item>
+        <item>가죽</item>
+        <item>니트</item>
+        <item>기모</item>
+        <item>합성섬유</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>긴팔</item>
+        <item>반팔</item>
+        <item>민소매</item>
+        <item>긴바지</item>
+        <item>반바지</item>
+        <item>치마</item>
+        <item>원피스</item>
+        <item>자켓</item>
+        <item>코트</item>
+        <item>패딩</item>
+        <item>운동화</item>
+        <item>샌들</item>
+        <item>부츠</item>>
+    </string-array>
+
+    <string-array name="thickness">
+        <item>얇음</item>
+        <item>보통</item>
+        <item>두꺼움</item>
+    </string-array>
+
+</resources>

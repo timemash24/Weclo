@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_bg"
+    tools:context="com.example.Weclo.WeatherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_alignBottom="@+id/tempMin"
+            android:text="도시"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/img_sky"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:text="하늘 상태"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="45dp" />
+
+        <TextView
+            android:id="@+id/tempCurr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_sky"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="305dp"
+            android:text="현재온도"
+            android:textColor="@android:color/black"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tempCurr"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-28dp"
+            android:layout_toRightOf="@+id/tempCurr"
+            android:text="\u2103"
+            android:textColor="@android:color/black"
+            android:textSize="65dp" />
+
+        <TextView
+            android:id="@+id/tempMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tempCurr"
+            android:layout_marginTop="120dp"
+            android:layout_toRightOf="@+id/img_sky"
+            android:textColor="	#696969"
+            android:textSize="30dp"
+            tools:text="최저온도" />
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tempMin"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tempMin"
+            android:text="\u002F"
+            android:textColor="	#696969"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tempMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempCurr"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/slash"
+            android:layout_toRightOf="@+id/slash"
+            android:textColor="	#696969"
+            android:textSize="30dp"
+            tools:text="최고온도" />
+
+        <ImageView
+            android:id="@+id/view_mainTop"
+            android:layout_width="225dp"
+            android:layout_height="275dp"
+            android:layout_below="@+id/img_sky"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/view_mainOutwear"
+            android:layout_width="225dp"
+            android:layout_height="275dp"
+            android:layout_toRightOf="@+id/view_mainTop"
+            android:layout_alignTop="@+id/view_mainTop"
+            android:layout_marginLeft="10dp"
+             />
+
+        <ImageView
+            android:id="@+id/view_mainBottom"
+            android:layout_width="225dp"
+            android:layout_height="275dp"
+            android:layout_below="@+id/view_mainTop"
+            android:layout_alignLeft="@+id/view_mainTop"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+             />
+
+        <ImageView
+            android:id="@+id/view_mainShoes"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_toRightOf="@+id/view_mainBottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="600dp"
+             />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/view_mainBottom"
+            android:text="옷장으로"
+            android:id="@+id/btn_closet"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/view_mainBottom"
+            android:layout_alignTop="@+id/btn_closet"
+            android:layout_toRightOf="@+id/btn_closet"
+            android:layout_marginLeft="50dp"
+            android:text="새로운 옷 추가"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btn_editStyle"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/btn_add"
+            android:layout_toRightOf="@+id/btn_add"
+            android:layout_marginLeft="50dp"
+            android:text="코디 수정"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

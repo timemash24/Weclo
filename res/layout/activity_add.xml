@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_bg"
+    >
+
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.example.Weclo.FragmentClothesView"
+        android:layout_width="346dp"
+        android:layout_height="358dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp" />
+
+    <fragment
+        android:id="@+id/textFragment"
+        android:name="com.example.Weclo.FragmentClothesText"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <fragment
+        android:id="@+id/checkboxFragment"
+        android:name="com.example.Weclo.FragmentColorBox"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="45dp"/>
+
+    <LinearLayout
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/text_category"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="분류"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/category"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/text_material"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="소재"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinner_material"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/materials" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/text_thickness"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="두께"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinner_thickness"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/thickness"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:onClick="onClick"
+            android:text="이미지 가져오기"
+            android:background="@color/black"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/toCloset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:onClick="onClick"
+            android:text="옷 저장하기"
+            android:background="@color/black"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>
+
